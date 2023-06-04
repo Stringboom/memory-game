@@ -1,0 +1,32 @@
+[{
+    "name": "bounty_hunter",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/bounty_hunter_full.png"
+},
+{
+    "name": "riki",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/riki_full.png"
+},
+{
+    "name": "slark",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/slark_full.png"
+},
+{
+    "name": "clinkz",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/clinkz_full.png"
+},
+{
+    "name": "sand_king",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/sand_king_full.png"
+},
+{
+    "name": "templar_assassin",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/templar_assassin_full.png"
+}, 
+{
+    "name": "nyx_assassin",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/nyx_assassin_full.png"
+},
+{
+    "name": "weaver",
+    "img": "https://cdn.dota2.com/apps/dota2/images/heroes/weaver_full.png"
+}]

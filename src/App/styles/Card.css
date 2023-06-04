@@ -1,0 +1,94 @@
+
+/* flip the pane when hovered */
+.facedown .flipper {
+    transform: rotateY(180deg);
+    cursor: pointer;
+    margin-right: 0px;
+}
+
+.card, .front, .back {
+	width: 100px;
+	height: 140px;
+}
+
+/* flip speed goes here */
+.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+/* hide back of pane during swap */
+.front, .back {
+    margin: 0px;
+	backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+   left: 0;
+   color: cornSilk;
+   text-align: center;
+   font: 3em/240px 'Helvetica Neue', Helvetica, sans-serif;
+   box-shadow: -5px 5px 5px #545454;
+   margin-left: -3px;
+   border: 3px solid rgb(255, 81, 81);
+   border-radius: 2px
+}
+
+/* front pane, placed above back */
+.front {
+  z-index: 2;
+  /* for firefox 31 */
+  transform: rotateY(0deg);
+  background: black;
+}
+
+/* back, initially hidden pane */
+.back {
+  transform: rotateY(180deg);
+  background: black;
+}
+
+.front .backdrop{
+    position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  filter: blur(10px);
+  -webkit-filter: blur(10px);
+  height: 120px; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* border-radius: 30px */
+   width: 80px;
+}
+
+.front .foreground {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  text-align: center;
+}
+
+.front .foreground img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 95%;
+    text-align: center;
+}
+
+.back .foreground img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    text-align: center;
+}
