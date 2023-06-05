@@ -16,6 +16,7 @@
 }
 
 .container {
+  width: 100%;
   display: flex;
   flex-direction: column;
   -webkit-user-select: none;
@@ -30,6 +31,7 @@
 
 
 .col {
+  width: 100%;
   display: flex;
 }
 
@@ -45,7 +47,9 @@
 }
 
 .stats{
+  /* width: 100%; */
   display: flex;
+  margin-bottom: .5rem;
   font-family: 'Chakra Petch', sans-serif;
   font-size: 24px;
   background: black;
@@ -78,4 +82,20 @@
 
 .highScore div:last-child{
   margin-left: 10px;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .cell {
+    width: 90px;
+    height: 100px;
+    font-size: 90px;
+  }
+  .stats{
+    padding: .5em;
+    font-size: 17px;
+    /* border: 2px solid white; */
+    border-radius: 10px;
+  }
+
 }
