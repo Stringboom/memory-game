@@ -66,7 +66,7 @@ class Deck{
                         this.cards[pairIndex].quickSolveMuliplier--;
                     }
           
-                    if(this.cards[pairIndex].deductionMuliplier != 5 && (pairIndex == cardIndex)){
+                    if(this.cards[pairIndex].deductionMuliplier != 3 && (pairIndex == cardIndex)){
                         this.cards[pairIndex].deductionMuliplier++;
                     }
 

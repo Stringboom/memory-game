@@ -7,7 +7,7 @@ import Card from './components/Card';
 function App() {
 
   const scoreDeductMagnitude = 6;
-  const scoreIncreaseMagnitude = 40;
+  const scoreIncreaseMagnitude = 85;
 
   const [cards, setCards] = useState(deck.getCards());  
   const [checkTurn, setCheckTurn] = useState(false);
